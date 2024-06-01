@@ -1,6 +1,6 @@
 services:
   app:
-    build: .
+    image: bayes_intro-app
     volumes:
       - .:/app
     command: sleep infinity

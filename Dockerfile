@@ -24,7 +24,7 @@ WORKDIR /app
 
 RUN git config --global --add safe.directory /app  
 
-COPY ./pyproject.toml ./poetry.lock* ./
+COPY ./pyproject.toml ./
 
 RUN poetry update
 RUN poetry add pymc && \
